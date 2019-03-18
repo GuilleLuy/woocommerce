@@ -416,6 +416,7 @@ final class WooCommerce {
 		 * Blocks.
 		 */
 		if ( file_exists( WC_ABSPATH . 'includes/blocks/class-wc-block-library.php' ) ) {
+			include_once WC_ABSPATH . 'includes/blocks/class-wc-block-helper.php';
 			include_once WC_ABSPATH . 'includes/blocks/class-wc-block-library.php';
 		}
 

@@ -300,7 +300,8 @@ module.exports = function( grunt ) {
 				src: [
 					'<%= dirs.js %>/blocks',
 					'<%= dirs.css %>/blocks',
-					'<%= dirs.php %>/blocks'
+					'<%= dirs.php %>/blocks/*.php',
+					'!<%= dirs.php %>/blocks/class-wc-block-helper.php',
 				]
 			}
 		},
